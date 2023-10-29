@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Data URI Generator</title>
+    <link rel="stylesheet" href="datagen.css">
+</head>
+<body>
+    <h1>Data URI Generator</h1>
+    <p><button id="browse" type="button">Browse for a file</button> or drag and drop it onto the page.</p>
+
+    <div id="result" class="hidden">
+        <div id="data">
+            <p><label for="name">Original name:</label></p>
+            <p><output id="name"></output></p>
+
+            <p><label for="size">File size:</label></p>
+            <p><output id="size"></output></p>
+
+            <p><label for="uri-size">URI length:</label></p>
+            <p><output id="uri-size"></output></p>
+
+            <p><label for="content-type">Content-Type:</label></p>
+            <p><output id="content-type"></output></p>
+        </div>
+
+        <p><label for="uri">Your generated URI:</label></p>
+        <p id="uri-p"><code><output id="uri"></output></code></p>
+        <p id="copy"><span id="copy-result">Copied!</span></p>
+    </div>
+
+    <form aria-hidden="true"><input type="file" id="file"></form>
+
+    <script src="datagen.js"></script>
+</body>
+</html>

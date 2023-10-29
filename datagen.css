@@ -1,0 +1,37 @@
+#data {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    justify-items: left;
+}
+
+#data > p {
+    margin: 0.25em 0;
+}
+
+form {
+    display: none;
+}
+
+#data label {
+    padding: 0 1em;
+}
+
+form, .hidden {
+    display: none;
+}
+
+#uri-p {
+    overflow-y: auto;
+    white-space: pre;
+    padding: 0 0.5em 0.5em;
+}
+
+#copy #copy-result {
+    display: none;
+}
+
+#copy.copied #copy-result {
+    padding-left: 1em;
+    display: inline;
+}
